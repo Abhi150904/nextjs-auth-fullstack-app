@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 "use client";
 
 import { useEffect, useState } from "react";
@@ -6,7 +7,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import Link from "next/link";
 
-export const dynamic = "force-dynamic";
+
 
 export default function VerifyEmailPage() {
   const router = useRouter();

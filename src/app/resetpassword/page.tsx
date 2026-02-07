@@ -1,13 +1,14 @@
+
+export const dynamic = "force-dynamic";
 "use client";
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-export const dynamic = "force-dynamic";
 
 export default function ResetPassword() {
   const searchParams = useSearchParams();
-  const token = searchParams.get("token");
+  const token = searchParams?.get("token") || "";
 
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");

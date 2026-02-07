@@ -66,7 +66,6 @@ export default function Profile() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-black text-white">
       <div className="w-full max-w-xl bg-[#0a0a0a] rounded-2xl shadow-lg p-6 border border-gray-800">
-        {/* Header */}
         <div className="flex items-center gap-4 mb-6">
           <div className="w-14 h-14 bg-gray-900 rounded-full flex items-center justify-center border border-gray-800">
             <span className="text-2xl">👤</span>
@@ -79,7 +78,6 @@ export default function Profile() {
           </div>
         </div>
 
-        {/* Dynamic Banner */}
         {userInfo && (
           <div
             className={`rounded-xl p-4 mb-5 border ${
@@ -98,8 +96,8 @@ export default function Profile() {
                   }`}
                 >
                   {userInfo.isVerified
-                    ? "✅ Account Verified"
-                    : "⚠️ Account Unverified"}
+                    ? " Account Verified"
+                    : " Account Unverified"}
                 </p>
 
                 <p
@@ -130,7 +128,6 @@ export default function Profile() {
           </div>
         )}
 
-        {/* User Identity Section */}
         <div className="bg-[#050505] border border-gray-800 rounded-xl p-4 mb-5">
           <div className="flex justify-between items-center mb-2">
             <span className="text-gray-400 text-sm">USER IDENTITY</span>
@@ -157,7 +154,6 @@ export default function Profile() {
           )}
         </div>
 
-        {/* Action Buttons */}
         <div className="flex gap-4 mb-5">
           <button
             onClick={logout}

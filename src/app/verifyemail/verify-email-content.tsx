@@ -62,16 +62,14 @@ export default function VerifyEmailContent() {
             <div className="text-green-400 text-lg mb-4">
               ✅ Email Verified Successfully!
             </div>
-        <Link href="/profile">Go to Profile</Link>
-
-
+            <Link href="/profile">Go to Profile</Link>
           </div>
         )}
 
         {error && (
           <div>
             <div className="text-red-400 text-lg mb-4">
-               {error}
+              ❌ {error}
             </div>
             <Link
               href="/signup"

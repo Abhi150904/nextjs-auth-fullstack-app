@@ -71,7 +71,7 @@ export default function VerifyEmailContent() {
         {error && (
           <div>
             <div className="text-red-400 text-lg mb-4">
-              ❌ {error}
+               {error}
             </div>
             <Link
               href="/signup"

@@ -6,6 +6,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default function VerifyEmailPage() {
   const router = useRouter();
   const searchParams = useSearchParams();

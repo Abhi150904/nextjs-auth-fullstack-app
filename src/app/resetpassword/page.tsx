@@ -44,7 +44,7 @@ export default function ResetPassword() {
 
         {!token && (
           <p className="text-red-400 text-center mb-4">
-            ❌ Invalid or missing reset token.
+             Invalid or missing reset token.
           </p>
         )}
 

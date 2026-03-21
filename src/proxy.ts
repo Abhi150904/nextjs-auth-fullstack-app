@@ -5,6 +5,7 @@ export function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
 
   const isPublicPath =
+    path === '/' ||
     path === '/login' ||
     path === '/signup' ||
     path === '/verifyemail' ||
